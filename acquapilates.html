@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AcquaPilates – Wellness Center Costa Brava</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="acquapilates.css">
+</head>
+<body>
+
+<!-- Accessibility: skip to main content -->
+<a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+<!-- ════ SHARED HEADER ════ -->
+<header role="banner">
+  <div class="logo" onclick="showPage('home')" role="link" tabindex="0" aria-label="AcquaPilates Startseite">
+    <svg class="logo-wave" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <circle cx="14" cy="14" r="13" fill="#5e2d52" opacity=".15"/>
+      <path d="M6 16 Q9 11 14 14 Q19 17 22 12" stroke="#5e2d52" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M6 19 Q9 14 14 17 Q19 20 22 15" stroke="#c4506a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </svg>
+    Acqua<em>Pilates</em>
+  </div>
+
+  <nav role="navigation" aria-label="Hauptnavigation">
+    <a onclick="showPage('home')"      id="nav-home"      tabindex="0">Startseite</a>
+    <a onclick="showPage('angebote')"  id="nav-angebote"  tabindex="0">Angebote & Kurse</a>
+    <a onclick="showPage('preise')"    id="nav-preise"    tabindex="0">Preise & Mitgliedschaft</a>
+    <a onclick="showPage('kontakt')"   id="nav-kontakt"   tabindex="0">Beratung & Kontakt</a>
+    <a onclick="showPage('ueber')"     id="nav-ueber"     tabindex="0">Über uns / Team</a>
+    <a onclick="showPage('galerie')"   id="nav-galerie"   tabindex="0">Galerie</a>
+    <a onclick="showPage('kontakt')"   class="nav-cta"    tabindex="0">Probetraining buchen</a>
+  </nav>
+</header>
+
+
+<!-- ════════════════════════════════════
+     STARTSEITE
+════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <main id="main-content">
+
+    <!-- HERO -->
+    <div class="hero" role="banner">
+      <div class="hero-bg-dots" aria-hidden="true"></div>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <span class="hero-tag">Pilates · Yoga · Gym · Wassersport</span>
+          <h1>Finde deinen sanften<br>Einstieg in <em>Wellness</em><br>&amp; Sport am Strand</h1>
+          <p class="hero-desc">Ein Ort für Bewegung, Gemeinschaft und Wohlbefinden – direkt am Meer in Spanien. Perfekt für alle, die neu ankommen und sich sofort wohlfühlen wollen.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" onclick="showPage('kontakt')" role="button">Jetzt Probetraining buchen</a>
+            <a class="btn-outline" onclick="showPage('angebote')" role="button">Alle Angebote ansehen</a>
+          </div>
+          <div class="hero-badges" role="list">
+            <div class="hero-badge" role="listitem">
+              <div class="hero-badge-icon" aria-hidden="true">♀</div>
+              Exklusiv für Frauen
+            </div>
+            <div class="hero-badge" role="listitem">
+              <div class="hero-badge-icon" aria-hidden="true">🔑</div>
+              24/7 Zugang
+            </div>
+            <div class="hero-badge" role="listitem">
+              <div class="hero-badge-icon" aria-hidden="true">🎁</div>
+              Erstes Training kostenlos
+            </div>
+          </div>
+        </div>
+
+        <!-- Right-side stat cards -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-stat-card">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Aktive Mitglieder</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Sportarten & Kurse</div>
+          </div>
+          <div class="hero-promo">
+            <div class="hero-promo-icon">🎉</div>
+            <div>
+              <strong>1. Training kostenlos</strong>
+              <span>Unverbindlich &amp; ohne Risiko</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANGEBOTE ÜBERBLICK -->
+    <section aria-labelledby="angebote-heading">
+      <div class="section-label">Unsere Angebote</div>
+      <h2 class="section-title" id="angebote-heading">Kurse für jeden Einstieg</h2>
+      <p class="section-sub">Von sanftem Pilates bis Wassersport – du findest deinen Weg. Alle Kurse werden von zertifizierten Trainerinnen geleitet.</p>
+      <div class="offer-grid" role="list">
+        <div class="offer-tile" onclick="showPage('angebote')" role="listitem" tabindex="0" aria-label="Pilates – Kurse ansehen">
+          <div class="offer-icon-wrap pilates" aria-hidden="true">🧘‍♀️</div>
+          <h3>Pilates</h3>
+          <p>Körpermitte stärken, Haltung verbessern, sanft starten – ideal für Anfängerinnen.</p>
+          <span class="tile-cta">Kurse ansehen →</span>
+        </div>
+        <div class="offer-tile" onclick="showPage('angebote')" role="listitem" tabindex="0" aria-label="Yoga – Kurse ansehen">
+          <div class="offer-icon-wrap yoga" aria-hidden="true">🌿</div>
+          <h3>Yoga</h3>
+          <p>Entspannung, Atemübungen und Flexibilität für Körper & Geist – indoor und am Strand.</p>
+          <span class="tile-cta">Kurse ansehen →</span>
+        </div>
+        <div class="offer-tile" onclick="showPage('angebote')" role="listitem" tabindex="0" aria-label="Gym – Mehr erfahren">
+          <div class="offer-icon-wrap gym" aria-hidden="true">💪</div>
+          <h3>Gym</h3>
+          <p>Modernes Equipment, offener Bereich, begleitetes Training rund um die Uhr.</p>
+          <span class="tile-cta">Mehr erfahren →</span>
+        </div>
+        <div class="offer-tile" onclick="showPage('angebote')" role="listitem" tabindex="0" aria-label="Wassersport – Mehr erfahren">
+          <div class="offer-icon-wrap wasser" aria-hidden="true">🏄‍♀️</div>
+          <h3>Wassersport</h3>
+          <p>SUP, Schwimmen, Beachworkout – das Meer als dein persönlicher Trainingsort.</p>
+          <span class="tile-cta">Mehr erfahren →</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <div class="why-strip" aria-labelledby="why-heading">
+      <div class="section-label" style="color:rgba(255,255,255,.6);">Warum AcquaPilates?</div>
+      <h2 class="section-title" id="why-heading" style="color:var(--white);">Dein Wohlfühlort am Meer</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-item-icon" aria-hidden="true">♀</div>
+          <h4>Nur für Frauen</h4>
+          <p>Unser gesamtes Studio ist ein sicherer, exklusiver Raum – damit du dich voll entspannen kannst.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item-icon" aria-hidden="true">🌊</div>
+          <h4>Direkt am Strand</h4>
+          <p>Pilates, Yoga und Wassersport mit Meerblick – ein Trainingsort, der inspiriert und motiviert.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item-icon" aria-hidden="true">🌱</div>
+          <h4>Kein Vorwissen nötig</h4>
+          <p>Alle Kurse sind anfängerfreundlich gestaltet. Komm einfach so wie du bist – wir begleiten dich.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item-icon" aria-hidden="true">👭</div>
+          <h4>Echte Community</h4>
+          <p>Finde Freundinnen, die denselben Weg gehen. Bei uns entsteht mehr als Sport – ein Zuhause.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROBETRAINING BANNER -->
+    <div class="probe-banner" role="region" aria-label="Probetraining Angebot">
+      <div class="probe-banner-text">
+        <h2>Dein erstes Training ist kostenlos 🎉</h2>
+        <p>Keine Verpflichtung, kein Risiko. Komm einfach vorbei, lerne das Studio kennen und spür, ob es das Richtige für dich ist. Wir melden uns innerhalb von 24 Stunden.</p>
+      </div>
+      <a class="btn-primary" onclick="showPage('kontakt')" role="button" style="flex-shrink:0; font-size:15.5px; padding:16px 34px;">Probetraining vereinbaren</a>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-sand" aria-labelledby="testimonials-heading">
+      <div class="section-label">Kundenstimmen</div>
+      <h2 class="section-title" id="testimonials-heading">Was unsere Community sagt</h2>
+      <div class="trust-row" role="list">
+        <div class="trust-card" role="listitem">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Ich bin neu in Spanien und hatte Angst, keinen Anschluss zu finden. Hier habe ich sofort Freundinnen gefunden!"</blockquote>
+          <cite>— Lena M., Pilates-Teilnehmerin</cite>
+        </div>
+        <div class="trust-card" role="listitem">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Das Probetraining hat mir alle Unsicherheit genommen. Die Atmosphäre ist einfach wunderbar und so entspannt."</blockquote>
+          <cite>— Sofia K., Yoga & Gym</cite>
+        </div>
+        <div class="trust-card" role="listitem">
+          <div class="stars" aria-label="4 von 5 Sternen">★★★★☆</div>
+          <blockquote>„Endlich ein Studio, das Wellness wirklich ernst nimmt. Die Lage am Strand macht alles noch schöner."</blockquote>
+          <cite>— Maria T., SUP & Pilates</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO BAND -->
+    <div class="info-band" role="region" aria-label="Studio-Infos">
+      <div class="info-item">
+        <span aria-hidden="true" style="font-size:22px;display:block;margin-bottom:8px;">📍</span>
+        <h4>Standort</h4>
+        <p>Paseo Marítimo 12<br>Costa Brava, Spanien</p>
+        <a class="info-link" onclick="showPage('kontakt')" tabindex="0">Auf Karte ansehen →</a>
+      </div>
+      <div class="info-item">
+        <span aria-hidden="true" style="font-size:22px;display:block;margin-bottom:8px;">🕐</span>
+        <h4>Öffnungszeiten</h4>
+        <p>Mo–Fr: 06:00 – 22:00<br>Sa–So: 07:00 – 20:00</p>
+        <span class="info-sub">Feiertage: 08:00 – 18:00</span>
+      </div>
+      <div class="info-item">
+        <span aria-hidden="true" style="font-size:22px;display:block;margin-bottom:8px;">🔑</span>
+        <h4>24/7 Mitglieder-Zugang</h4>
+        <p>Rund um die Uhr trainieren – mit der AcquaPilates App</p>
+        <a class="info-link" onclick="showPage('preise')" tabindex="0">Mitglied werden →</a>
+      </div>
+      <div class="info-item">
+        <span aria-hidden="true" style="font-size:22px;display:block;margin-bottom:8px;">♀</span>
+        <h4>Nur für Frauen</h4>
+        <p>Sicherer, exklusiver Raum für Frauen – Gym, Kursräume, Sauna & Umkleiden</p>
+      </div>
+      <div class="info-item">
+        <span aria-hidden="true" style="font-size:22px;display:block;margin-bottom:8px;">📞</span>
+        <h4>Kontakt</h4>
+        <p>+34 972 000 000<br>hola@acquapilates.es</p>
+        <a class="info-link" onclick="showPage('kontakt')" tabindex="0">Schreib uns →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a onclick="showPage('angebote')">Angebote & Kurse</a>
+        <a onclick="showPage('preise')">Preise & Mitgliedschaft</a>
+        <a onclick="showPage('kontakt')">Beratung & Kontakt</a>
+        <a onclick="showPage('galerie')">Galerie</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kurse</h4>
+        <a onclick="showPage('angebote')">Pilates</a>
+        <a onclick="showPage('angebote')">Yoga</a>
+        <a onclick="showPage('angebote')">Gym</a>
+        <a onclick="showPage('angebote')">Wassersport</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a onclick="showPage('ueber')">Über uns</a>
+        <a onclick="showPage('ueber')">Team / Trainerinnen</a>
+        <a onclick="showPage('kontakt')">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcquaPilates Wellness Center · Costa Brava</span>
+      <div class="social-links" aria-label="Social Media">
+        <div class="social-btn" role="link" aria-label="Instagram" tabindex="0">📸</div>
+        <div class="social-btn" role="link" aria-label="X / Twitter" tabindex="0">𝕏</div>
+        <div class="social-btn" role="link" aria-label="YouTube" tabindex="0">▶</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ════════════════════════════════════
+     ANGEBOTE & KURSE
+════════════════════════════════════ -->
+<div class="page" id="page-angebote">
+  <main id="main-content">
+    <div class="page-hero">
+      <div class="breadcrumb"><a onclick="showPage('home')">Startseite</a> › Angebote & Kurse</div>
+      <div class="section-label">Unsere Kurse</div>
+      <h1 class="section-title">Sanfte Kurse für jeden Level</h1>
+      <p style="color:var(--text-mid);font-size:16px;">Ob Anfängerin oder erfahrene Sportlerin – wir haben das Richtige für dich.</p>
+    </div>
+
+    <section>
+      <div class="kurs-grid">
+        <div class="kurs-card">
+          <div class="kurs-img" aria-hidden="true">🧘‍♀️</div>
+          <div class="kurs-body">
+            <h3>Pilates</h3>
+            <p>Stärke deine Körpermitte und verbessere deine Haltung. Ideal für Einsteiger und zur Rehabilitation.</p>
+            <div class="kurs-meta">
+              <span class="kurs-tag">Anfänger ✓</span>
+              <span class="kurs-tag">60 min</span>
+              <span class="kurs-tag">Indoor</span>
+            </div>
+            <a class="btn-primary" onclick="showPage('kontakt')" role="button">Jetzt buchen</a>
+          </div>
+        </div>
+        <div class="kurs-card">
+          <div class="kurs-img" aria-hidden="true">🌿</div>
+          <div class="kurs-body">
+            <h3>Yoga</h3>
+            <p>Entspannung und Atemübungen für Körper und Geist. Morgen-Yoga direkt am Strand oder im Studio.</p>
+            <div class="kurs-meta">
+              <span class="kurs-tag">Alle Level</span>
+              <span class="kurs-tag">75 min</span>
+              <span class="kurs-tag">Indoor/Outdoor</span>
+            </div>
+            <a class="btn-primary" onclick="showPage('kontakt')" role="button">Jetzt buchen</a>
+          </div>
+        </div>
+        <div class="kurs-card">
+          <div class="kurs-img" aria-hidden="true">💪</div>
+          <div class="kurs-body">
+            <h3>Gym</h3>
+            <p>Modernes Equipment und begleitetes Training. Flexible Zeiten durch 24/7-Zugang für Mitglieder.</p>
+            <div class="kurs-meta">
+              <span class="kurs-tag">24/7 Zugang</span>
+              <span class="kurs-tag">Freies Training</span>
+            </div>
+            <a class="btn-primary" onclick="showPage('kontakt')" role="button">Mehr erfahren</a>
+          </div>
+        </div>
+        <div class="kurs-card">
+          <div class="kurs-img" aria-hidden="true">🏄‍♀️</div>
+          <div class="kurs-body">
+            <h3>Wassersport</h3>
+            <p>SUP-Yoga, Schwimm-Workout und Beachtraining. Das Meer als dein persönlicher Trainingsbereich.</p>
+            <div class="kurs-meta">
+              <span class="kurs-tag">Outdoor</span>
+              <span class="kurs-tag">Saisonal</span>
+              <span class="kurs-tag">Gruppe</span>
+            </div>
+            <a class="btn-primary" onclick="showPage('kontakt')" role="button">Jetzt buchen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-sand">
+      <div class="section-label">Kursplan</div>
+      <h2 class="section-title">Wochenplan Mai 2026</h2>
+      <div style="overflow-x:auto;">
+        <table class="kursplan-table" role="table" aria-label="Wochenplan">
+          <thead>
+            <tr>
+              <th scope="col">Uhrzeit</th>
+              <th scope="col">Montag</th>
+              <th scope="col">Dienstag</th>
+              <th scope="col">Mittwoch</th>
+              <th scope="col">Donnerstag</th>
+              <th scope="col">Freitag</th>
+              <th scope="col">Samstag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>07:00</strong></td>
+              <td><span class="badge-kurs">Yoga</span></td>
+              <td>–</td>
+              <td><span class="badge-kurs">Yoga</span></td>
+              <td>–</td>
+              <td><span class="badge-kurs">Yoga</span></td>
+              <td><span class="badge-kurs">Strand-Yoga</span></td>
+            </tr>
+            <tr>
+              <td><strong>09:00</strong></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">SUP-Yoga</span></td>
+            </tr>
+            <tr>
+              <td><strong>11:00</strong></td>
+              <td>–</td>
+              <td><span class="badge-kurs">Wassersport</span></td>
+              <td>–</td>
+              <td><span class="badge-kurs">Wassersport</span></td>
+              <td>–</td>
+              <td><span class="badge-kurs">Pilates</span></td>
+            </tr>
+            <tr>
+              <td><strong>17:00</strong></td>
+              <td><span class="badge-kurs">Yoga</span></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">Yoga</span></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td><span class="badge-kurs">Yoga</span></td>
+              <td>–</td>
+            </tr>
+            <tr>
+              <td><strong>19:00</strong></td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td>–</td>
+              <td><span class="badge-kurs">Pilates</span></td>
+              <td>–</td>
+              <td>–</td>
+              <td>–</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Events & Specials</div>
+      <h2 class="section-title">Aktuelle Highlights</h2>
+      <div class="event-list">
+        <div class="event-card">
+          <div class="event-date" aria-label="10. Mai"><div class="ed-day">10</div><div class="ed-mon">Mai</div></div>
+          <div class="event-info">
+            <h4>Einsteiger-Workshop Pilates</h4>
+            <p>2-stündiger Workshop speziell für Anfängerinnen. Kostenlos für Neumitglieder.</p>
+          </div>
+          <a class="btn-primary" style="margin-left:auto;white-space:nowrap;" onclick="showPage('kontakt')" role="button">Anmelden</a>
+        </div>
+        <div class="event-card">
+          <div class="event-date" aria-label="17. Mai"><div class="ed-day">17</div><div class="ed-mon">Mai</div></div>
+          <div class="event-info">
+            <h4>Sunrise SUP-Yoga am Strand</h4>
+            <p>Gemeinsam auf dem Wasser meditieren und Yoga üben. Nur 12 Plätze.</p>
+          </div>
+          <a class="btn-primary" style="margin-left:auto;white-space:nowrap;" onclick="showPage('kontakt')" role="button">Anmelden</a>
+        </div>
+        <div class="event-card">
+          <div class="event-date" aria-label="31. Mai"><div class="ed-day">31</div><div class="ed-mon">Mai</div></div>
+          <div class="event-info">
+            <h4>Tag der offenen Tür</h4>
+            <p>Alle Kurse kostenlos ausprobieren. Familienfreundlich, keine Anmeldung nötig.</p>
+          </div>
+          <a class="btn-primary" style="margin-left:auto;white-space:nowrap;" onclick="showPage('kontakt')" role="button">Mehr Info</a>
+        </div>
+      </div>
+    </section>
+
+    <div style="padding: 0 48px 64px; text-align:center;">
+      <p style="font-size:16px;color:var(--text-mid);margin-bottom:18px;">Noch unsicher? Dein erstes Probetraining ist kostenlos.</p>
+      <a class="btn-primary" onclick="showPage('kontakt')" role="button">Probetraining vereinbaren</a>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Kurse</h4>
+        <a onclick="showPage('angebote')">Pilates</a><a onclick="showPage('angebote')">Yoga</a>
+        <a onclick="showPage('angebote')">Gym</a><a onclick="showPage('angebote')">Wassersport</a>
+      </div>
+      <div class="footer-col"><h4>Info</h4>
+        <a onclick="showPage('preise')">Preise</a><a onclick="showPage('kontakt')">Kontakt</a>
+        <a onclick="showPage('ueber')">Über uns</a>
+      </div>
+      <div class="footer-col"><h4>Rechtliches</h4>
+        <a href="#">Impressum</a><a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcquaPilates Wellness Center · Costa Brava</span>
+      <div class="social-links"><div class="social-btn" tabindex="0">📸</div><div class="social-btn" tabindex="0">𝕏</div></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ════════════════════════════════════
+     PREISE & MITGLIEDSCHAFT
+════════════════════════════════════ -->
+<div class="page" id="page-preise">
+  <main id="main-content">
+    <div class="page-hero">
+      <div class="breadcrumb"><a onclick="showPage('home')">Startseite</a> › Preise & Mitgliedschaft</div>
+      <div class="section-label">Mitgliedschaften</div>
+      <h1 class="section-title">Transparent & flexibel</h1>
+      <p style="color:var(--text-mid);font-size:16px;">Wähle das Modell, das zu deinem Leben passt.</p>
+    </div>
+
+    <section>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Schnuppern</h3>
+          <div class="price">0€</div>
+          <div class="price-period">einmalig</div>
+          <ul aria-label="Inklusive">
+            <li>1 Probetraining deiner Wahl</li>
+            <li>Beratungsgespräch</li>
+            <li>Studioführung</li>
+          </ul>
+          <a class="btn-outline-plum" onclick="showPage('kontakt')" role="button">Jetzt buchen</a>
+        </div>
+        <div class="price-card featured">
+          <div class="badge-popular">Beliebt</div>
+          <h3>Monatsmitglied</h3>
+          <div class="price">59€</div>
+          <div class="price-period">pro Monat</div>
+          <ul aria-label="Inklusive" style="margin-top:4px;">
+            <li>Alle Gruppenkurse inkl.</li>
+            <li>Gym-Nutzung</li>
+            <li>24/7 Zugang</li>
+            <li>Sauna inklusive</li>
+            <li>1 Beratung/Monat</li>
+          </ul>
+          <a class="btn-primary" onclick="showPage('kontakt')" role="button" style="width:100%;justify-content:center;">Mitglied werden</a>
+        </div>
+        <div class="price-card">
+          <h3>Jahresmitglied</h3>
+          <div class="price">39€</div>
+          <div class="price-period">pro Monat (Jahresabo)</div>
+          <ul aria-label="Inklusive">
+            <li>Alles aus Monatsabo</li>
+            <li>2 Monate gratis</li>
+            <li>Wassersport-Kurse inkl.</li>
+            <li>Priority-Kursbuchung</li>
+          </ul>
+          <a class="btn-outline-plum" onclick="showPage('kontakt')" role="button">Jetzt sichern</a>
+        </div>
+        <div class="price-card">
+          <h3>10er-Karte</h3>
+          <div class="price">89€</div>
+          <div class="price-period">10 Kurseinheiten</div>
+          <ul aria-label="Inklusive">
+            <li>Flexible Nutzung</li>
+            <li>Alle Kursarten</li>
+            <li>12 Monate gültig</li>
+          </ul>
+          <a class="btn-outline-plum" onclick="showPage('kontakt')" role="button">Karte kaufen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-sand">
+      <div class="section-label">Besonderheiten</div>
+      <h2 class="section-title">Das ist im Preis inklusive</h2>
+      <div class="info-pills" role="list">
+        <div class="pill" role="listitem">♀ Exklusiv für Frauen</div>
+        <div class="pill" role="listitem">🔑 24/7 Zugang für Mitglieder</div>
+        <div class="pill" role="listitem">🧖‍♀️ Sauna-Nutzung inklusive</div>
+        <div class="pill" role="listitem">📱 App-Buchung der Kurse</div>
+        <div class="pill" role="listitem">🏖️ Outdoor-Kurse am Strand</div>
+        <div class="pill" role="listitem">💬 Gesundheitsberatung buchbar</div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Kurse</h4>
+        <a onclick="showPage('angebote')">Pilates</a><a onclick="showPage('angebote')">Yoga</a>
+      </div>
+      <div class="footer-col"><h4>Info</h4>
+        <a onclick="showPage('kontakt')">Kontakt & FAQ</a><a onclick="showPage('ueber')">Über uns</a>
+      </div>
+      <div class="footer-col"><h4>Rechtliches</h4>
+        <a href="#">Impressum</a><a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcquaPilates Wellness Center · Costa Brava</span>
+      <div class="social-links"><div class="social-btn" tabindex="0">📸</div></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ════════════════════════════════════
+     BERATUNG & KONTAKT
+════════════════════════════════════ -->
+<div class="page" id="page-kontakt">
+  <main id="main-content">
+    <div class="page-hero">
+      <div class="breadcrumb"><a onclick="showPage('home')">Startseite</a> › Beratung & Kontakt</div>
+      <div class="section-label">Wir freuen uns auf dich</div>
+      <h1 class="section-title">Probetraining vereinbaren</h1>
+      <p style="color:var(--text-mid);font-size:16px;">Das erste Training ist kostenlos und unverbindlich. Wir melden uns innerhalb von 24 h.</p>
+    </div>
+
+    <section>
+      <div class="contact-layout">
+        <div class="contact-form" role="form" aria-label="Probetraining anfragen">
+          <label for="f-name">Dein Name</label>
+          <input id="f-name" type="text" placeholder="z. B. Susi Müller" autocomplete="name">
+          <label for="f-email">E-Mail-Adresse</label>
+          <input id="f-email" type="email" placeholder="deine@email.com" autocomplete="email">
+          <label for="f-tel">Telefon (optional)</label>
+          <input id="f-tel" type="tel" placeholder="+34 600 000 000" autocomplete="tel">
+          <label for="f-kurs">Ich interessiere mich für …</label>
+          <select id="f-kurs">
+            <option>Pilates – Anfänger</option>
+            <option>Yoga – Morgenklasse</option>
+            <option>Gym – Begleitetes Training</option>
+            <option>Wassersport / SUP</option>
+            <option>Allgemeine Beratung</option>
+          </select>
+          <label for="f-msg">Nachricht / Fragen</label>
+          <textarea id="f-msg" placeholder="Hast du spezielle Wünsche oder Fragen? Wir helfen gerne!"></textarea>
+          <p class="privacy">🔒 Deine Daten werden nur zur Bearbeitung dieser Anfrage verwendet (DSGVO).</p>
+          <a class="btn-primary" role="button" style="display:block;text-align:center;margin-top:22px;justify-content:center;">Probetraining anfragen</a>
+        </div>
+
+        <div>
+          <div class="contact-info-block">
+            <h3>So findest du uns</h3>
+            <div class="contact-info-item">
+              <span class="ci-icon" aria-hidden="true">📍</span>
+              <div><strong>Adresse</strong><br>Paseo Marítimo 12<br>17480 Costa Brava, Spanien</div>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon" aria-hidden="true">🕐</span>
+              <div><strong>Öffnungszeiten</strong><br>Mo–Fr: 06:00–22:00 Uhr<br>Sa–So: 07:00–20:00 Uhr<br>Feiertage: 08:00–18:00 Uhr</div>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon" aria-hidden="true">📞</span>
+              <div><strong>Telefon</strong><br>+34 972 000 000</div>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon" aria-hidden="true">📧</span>
+              <div><strong>E-Mail</strong><br>hola@acquapilates.es</div>
+            </div>
+            <div class="map-placeholder" role="img" aria-label="Google Maps Platzhalter">
+              🗺️ Karte / Google Maps Platzhalter
+            </div>
+          </div>
+
+          <div style="margin-top:30px;">
+            <div class="section-label" style="margin-bottom:10px;">Häufige Fragen</div>
+            <div class="faq-list" role="list">
+              <div class="faq-item" role="listitem">
+                <div class="faq-q" onclick="toggleFaq(this.parentElement)" role="button" tabindex="0" aria-expanded="false">
+                  Ist das erste Probetraining wirklich kostenlos?
+                  <span class="faq-arrow" aria-hidden="true">▾</span>
+                </div>
+                <div class="faq-a" role="region">Ja! Das erste Training ist vollkommen kostenlos und unverbindlich. Du musst nichts mitbringen außer sportlicher Kleidung.</div>
+              </div>
+              <div class="faq-item" role="listitem">
+                <div class="faq-q" onclick="toggleFaq(this.parentElement)" role="button" tabindex="0" aria-expanded="false">
+                  Ist AcquaPilates wirklich nur für Frauen?
+                  <span class="faq-arrow" aria-hidden="true">▾</span>
+                </div>
+                <div class="faq-a" role="region">Ja! AcquaPilates ist ein reines Frauenstudio. Das gesamte Studio – Gym, Kursräume, Sauna und Umkleiden – ist ausschließlich für Frauen. So kannst du dich voll entspannen und in deiner Wohlfühlzone trainieren.</div>
+              </div>
+              <div class="faq-item" role="listitem">
+                <div class="faq-q" onclick="toggleFaq(this.parentElement)" role="button" tabindex="0" aria-expanded="false">
+                  Wie funktioniert der 24/7-Zugang?
+                  <span class="faq-arrow" aria-hidden="true">▾</span>
+                </div>
+                <div class="faq-a" role="region">Mit deiner Mitglieds-App kannst du das Studio rund um die Uhr nutzen. Gilt für alle Monatsmitglieder.</div>
+              </div>
+              <div class="faq-item" role="listitem">
+                <div class="faq-q" onclick="toggleFaq(this.parentElement)" role="button" tabindex="0" aria-expanded="false">
+                  Muss ich Sport-Vorwissen haben?
+                  <span class="faq-arrow" aria-hidden="true">▾</span>
+                </div>
+                <div class="faq-a" role="region">Überhaupt nicht! Alle unsere Anfänger-Kurse sind so gestaltet, dass du ohne Vorkenntnisse starten kannst.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Schnell</h4>
+        <a onclick="showPage('angebote')">Kurse ansehen</a><a onclick="showPage('preise')">Preise</a>
+      </div>
+      <div class="footer-col"><h4>Rechtliches</h4>
+        <a href="#">Impressum</a><a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcquaPilates Wellness Center</span>
+      <div class="social-links"><div class="social-btn" tabindex="0">📸</div><div class="social-btn" tabindex="0">𝕏</div></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ════════════════════════════════════
+     ÜBER UNS / TEAM
+════════════════════════════════════ -->
+<div class="page" id="page-ueber">
+  <main id="main-content">
+    <div class="page-hero">
+      <div class="breadcrumb"><a onclick="showPage('home')">Startseite</a> › Über uns / Team</div>
+      <div class="section-label">Unsere Geschichte</div>
+      <h1 class="section-title">Wellness mit Herz & Leidenschaft</h1>
+    </div>
+
+    <section>
+      <div style="max-width:660px;">
+        <p style="font-size:17px;line-height:1.75;color:var(--text-mid);margin-bottom:22px;">
+          Gegründet 2019, haben wir es uns zur Mission gemacht, einen Ort der Gemeinschaft, Bewegung und Entspannung direkt am Meer zu schaffen. AcquaPilates ist ein reines Frauenstudio – von Frauen, für Frauen.
+        </p>
+        <p style="font-size:17px;line-height:1.75;color:var(--text-mid);">
+          Besonders am Herzen liegt uns der niedrigschwellige Einstieg: Jede Frau, egal welches Fitnesslevel, soll sich bei uns sicher, willkommen und wohlfühlen.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-sand">
+      <div class="section-label">Das Team</div>
+      <h2 class="section-title">Unsere Trainerinnen</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" aria-hidden="true">🧘‍♀️</div>
+          <h3>Maria Santos</h3>
+          <p>Pilates & Yoga<br><span style="color:var(--rose);font-size:12px;font-weight:700;">10 Jahre Erfahrung</span></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" aria-hidden="true">🏄‍♀️</div>
+          <h3>Laura García</h3>
+          <p>Wassersport & SUP<br><span style="color:var(--rose);font-size:12px;font-weight:700;">Lizenzierte Rettungsschwimmerin</span></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" aria-hidden="true">💪</div>
+          <h3>Ana Rodríguez</h3>
+          <p>Gym & Functional Training<br><span style="color:var(--rose);font-size:12px;font-weight:700;">Personal Trainerin</span></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" aria-hidden="true">🌿</div>
+          <h3>Sofia López</h3>
+          <p>Yoga & Gesundheitsberatung<br><span style="color:var(--rose);font-size:12px;font-weight:700;">Ernährungsberaterin</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Kundenstimmen</div>
+      <h2 class="section-title">Was unsere Community sagt</h2>
+      <div class="trust-row">
+        <div class="trust-card">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Ich bin neu in Spanien und hatte Angst, keinen Anschluss zu finden. Hier habe ich sofort Freundinnen gefunden!"</blockquote>
+          <cite>— Lena M.</cite>
+        </div>
+        <div class="trust-card">
+          <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>„Das Probetraining hat mir alle Unsicherheit genommen. Die Atmosphäre ist wunderbar."</blockquote>
+          <cite>— Sofia K.</cite>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Navigation</h4>
+        <a onclick="showPage('angebote')">Kurse</a><a onclick="showPage('preise')">Preise</a>
+        <a onclick="showPage('kontakt')">Kontakt</a><a onclick="showPage('galerie')">Galerie</a>
+      </div>
+      <div class="footer-col"><h4>Rechtliches</h4>
+        <a href="#">Impressum</a><a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcquaPilates Wellness Center</span>
+      <div class="social-links"><div class="social-btn" tabindex="0">📸</div></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ════════════════════════════════════
+     GALERIE
+════════════════════════════════════ -->
+<div class="page" id="page-galerie">
+  <main id="main-content">
+    <div class="page-hero">
+      <div class="breadcrumb"><a onclick="showPage('home')">Startseite</a> › Galerie</div>
+      <div class="section-label">Einblicke</div>
+      <h1 class="section-title">Studio, Strand & Kurse</h1>
+    </div>
+
+    <section>
+      <div class="gallery-grid" role="list">
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Strand-Yoga">🌊<div class="gallery-cap">Strand-Yoga</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Pilates Studio">🧘‍♀️<div class="gallery-cap">Pilates Studio</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="SUP Kurs">🏄‍♀️<div class="gallery-cap">SUP Kurs</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Sonnenaufgang am Meer">🌅<div class="gallery-cap">Sonnenaufgang am Meer</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Gym-Bereich">💪<div class="gallery-cap">Gym-Bereich</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Sauna & Wellness">🧖‍♀️<div class="gallery-cap">Sauna & Wellness</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Yoga Outdoor">🌿<div class="gallery-cap">Yoga Outdoor</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Community Events">🎉<div class="gallery-cap">Community Events</div></div>
+        <div class="gallery-item" role="listitem" tabindex="0" aria-label="Beachtraining">🏖️<div class="gallery-cap">Beachtraining</div></div>
+      </div>
+      <p style="text-align:center;margin-top:32px;color:var(--text-mid);font-size:14px;">
+        Folge uns auf Instagram für mehr Einblicke: <strong style="color:var(--plum);">@acquapilates.costabrava</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Navigation</h4>
+        <a onclick="showPage('angebote')">Kurse</a><a onclick="showPage('kontakt')">Kontakt</a>
+      </div>
+      <div class="footer-col"><h4>Rechtliches</h4>
+        <a href="#">Impressum</a><a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AcquaPilates Wellness Center</span>
+      <div class="social-links"><div class="social-btn" tabindex="0">📸</div><div class="social-btn" tabindex="0">▶</div></div>
+    </div>
+  </footer>
+</div>
+
+
+<script>
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    const target = document.getElementById('page-' + id);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    const navEl = document.getElementById('nav-' + id);
+    if (navEl) navEl.classList.add('active');
+  }
+
+  function toggleFaq(el) {
+    const wasOpen = el.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if (!wasOpen) {
+      el.classList.add('open');
+      el.querySelector('.faq-q').setAttribute('aria-expanded','true');
+    }
+  }
+
+  // Keyboard support for offer tiles & nav links
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const el = document.activeElement;
+      if (el && el.classList.contains('offer-tile')) { el.click(); e.preventDefault(); }
+      if (el && el.tagName === 'A' && el.hasAttribute('onclick')) { el.click(); e.preventDefault(); }
+      if (el && el.classList.contains('faq-q')) { el.click(); e.preventDefault(); }
+    }
+  });
+
+  // Init
+  showPage('home');
+</script>
+</body>
+</html>
